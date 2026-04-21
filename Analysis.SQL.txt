@@ -1,0 +1,13 @@
+
+-- Total Revenue
+SELECT SUM(Sales_Amount) FROM sales_clean;
+
+-- Sales by Region
+SELECT Region, SUM(Sales_Amount)
+FROM sales_clean
+GROUP BY Region;
+
+-- Top Sales Reps
+SELECT Sales_Rep, SUM(Sales_Amount)
+FROM sales_clean
+GROUP BY Sales_Rep;
